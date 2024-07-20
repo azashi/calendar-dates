@@ -1,0 +1,164 @@
+:root {
+  font-family: Inter, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --text-color-primary: #023e8a;
+  --text-color-secondary: #2a9d8f;
+  --text-color-main: #03045e;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: var(--text-color-main);
+}
+
+a {
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  color: var(--text-color-secondary);
+}
+
+.container {
+  max-width: 900px;
+  margin: 5vh auto;
+  padding: 1rem 2rem;
+  height: 90vh;
+
+  -webkit-box-shadow: 2px 2px 16px 1px rgba(173, 181, 189, 0.4);
+  -moz-box-shadow: 2px 2px 16px 1px rgba(173, 181, 189, 0.4);
+  box-shadow: 2px 2px 16px 1px rgba(173, 181, 189, 0.4);
+}
+
+ul {
+  list-style-type: none;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Component styles */
+
+.card {
+  display: flex;
+  flex: 1;
+  height: 160px;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px;
+  transition: background-color 0.3s;
+}
+
+.card-short {
+  height: 60px;
+}
+
+.card:hover {
+  background-color: #caf0f8;
+}
+
+.card-disabled:hover {
+  background-color: transparent;
+}
+
+.card-header {
+  border-bottom: 2px solid #e9c46a;
+  padding-bottom: 12px;
+}
+
+.card-header-month {
+  border-bottom: 2px solid #e9c46a;
+  padding-bottom: 6px;
+  padding-top: 6px;
+  margin-top: 24px;
+  flex: 1;
+  text-align: "center";
+}
+
+.card-header-container {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+}
+
+.card-body {
+  text-align: right;
+  padding-right: 4px;
+  margin-top: auto;
+}
+
+.card-body-short {
+  text-align: center;
+  padding-right: 0px;
+}
+
+.week-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.month-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: column;
+  gap: 24px;
+}
+
+.week-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.week-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.week-controls-container {
+  width: 100%;
+  align-self: flex-start;
+  margin-top: 12px;
+}
+
+button {
+  width: 120px;
+  padding: 12px 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #2a9d8f;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #57cc99;
+}

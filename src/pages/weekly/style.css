@@ -1,0 +1,67 @@
+.card {
+  display: flex;
+  flex: 1;
+  height: 160px;
+  flex-direction: column;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 4px;
+  transition: background-color 0.3s;
+}
+
+.card:hover {
+  background-color: #caf0f8;
+}
+
+.card-header {
+  border-bottom: 2px solid #e9c46a;
+  padding-bottom: 12px;
+}
+
+.card-body {
+  text-align: right;
+  padding-right: 4px;
+  margin-top: auto;
+}
+
+.week-container {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.week-row {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+}
+
+.week-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 8px;
+}
+
+button {
+  width: 120px;
+  padding: 12px 4px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color: #2a9d8f;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1.4px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #57cc99;
+}
