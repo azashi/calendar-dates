@@ -11,3 +11,5 @@ Repo containing examples of calendar built with [dayjs](https://day.js.org/en/)
   ```
 
 #### Has **weekly** and **monthly** calendar examples
+
+### Watch on YT ["Thinking in Dates: Craft your own calendar"](https://www.youtube.com/watch?v=VOVYT5xtHNA&t=5s)
